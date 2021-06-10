@@ -13,6 +13,10 @@ all : clean lint
 clean:
 	rm -fr dist/* .pytype
 
+.PHONY: install
+install:
+	./scripts/install.sh
+
 .PHONY: lint
 lint: stein
 
