@@ -5,8 +5,8 @@ jobs:
     name: Create a Kind cluster
     runs-on: [ubuntu-latest]
     steps:
-    - uses: actions/checkout@latest
-    - uses: engineerd/setup-kind@latest
+    - uses: actions/checkout@v2
+    - uses: engineerd/setup-kind@master
     - name: Testing
       run: |
         kubectl cluster-info
