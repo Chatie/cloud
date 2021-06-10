@@ -1,4 +1,4 @@
-# Chatie Cloud
+# Chatie Cloud [![Kind](https://github.com/Chatie/cloud/actions/workflows/kind.yml/badge.svg)](https://github.com/Chatie/cloud/actions/workflows/kind.yml)
 
 Kubernetes Cloud Configurations
 
