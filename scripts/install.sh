@@ -13,7 +13,7 @@ function install_stein () {
     STEIN_RELEASE=https://github.com/b4b4r07/stein/releases/download/v0.3.4/stein_linux_x86_64.tar.gz
     wget "$STEIN_RELEASE"
     tar zxvf stein_linux_x86_64.tar.gz
-    mv stein /usr/local/bin
+    sudo mv stein /usr/local/bin
 }
 
 main () {

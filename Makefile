@@ -15,7 +15,7 @@ clean:
 
 .PHONY: install
 install:
-	./scripts/install.sh
+	bash -x ./scripts/install.sh
 
 .PHONY: lint
 lint: stein
