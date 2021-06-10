@@ -41,7 +41,7 @@ Kubernetes Cloud Configurations
 
 ## Author
 
-[Huan](https://github.com/huan) [(李卓桓)](http://linkedin.com/in/zixia), [Microsoft Regional Director](https://rd.microsoft.com/en-us/huan-li)
+[Huan](https://github.com/huan) [(李卓桓)](http://linkedin.com/in/zixia), [Google Cloud Professional Data Engineer](https://www.credential.net/d64187a5-55c9-45f5-850f-a46703a82cef)
 
 [![Profile of Huan LI (李卓桓) on StackOverflow](https://stackoverflow.com/users/flair/1123955.png)](https://stackoverflow.com/users/1123955/huan)
 
