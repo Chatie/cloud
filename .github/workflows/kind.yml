@@ -5,14 +5,11 @@ jobs:
     name: Create a Kind cluster
     runs-on: [ubuntu-latest]
     steps:
-    - uses: actions/checkout
-      - uses: engineerd/setup-kind@latest
-    - name: Create Kind cluster
+    - uses: actions/checkout@latest
+    - uses: engineerd/setup-kind@latest
+    - name: Testing
       run: |
-        PATH=$(go env GOPATH)/bin:$PATH kind create cluster --config kind-config.yaml
-    - name: Run some sanity checks
-      # kubectl is already installed on the Github Ubuntu worker
-      run: |
-        kubectl get nodes -o wide
-        kubectl get pods --all-namespaces -o wide
-        kubectl get services --all-namespaces -o wide
+        kubectl cluster-info
+        kubectl get pods -n kube-system
+        echo "current-context:" $(kubectl config current-context)
+        echo "environment-kubeconfig:" ${KUBECONFIG}
