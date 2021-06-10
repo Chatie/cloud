@@ -6,12 +6,7 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
     - uses: actions/checkout
-    - uses: actions/setup-go
-      with:
-        go-version: 1.16
-    - name: Install latest version of Kind
-      run: |
-        go get sigs.k8s.io/kind
+      - uses: engineerd/setup-kind@latest
     - name: Create Kind cluster
       run: |
         PATH=$(go env GOPATH)/bin:$PATH kind create cluster --config kind-config.yaml
